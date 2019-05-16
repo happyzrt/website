@@ -17,5 +17,5 @@ func main(){
     http.Handle("/html/", http.FileServer(http.Dir("./")))
     http.Handle("/video/", http.FileServer(http.Dir("./")))
     http.HandleFunc("/", main_handler)
-    http.ListenAndServe(":8080", nil)
+    http.ListenAndServe(":80", nil)
 }
